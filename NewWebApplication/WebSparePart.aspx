@@ -33,30 +33,51 @@
 			<!-- Main -->
 				<section id="main" class="wrapper">
 					<div class="inner">
-						<h1 class="major">Spare Part</h1>
+						<h1 class="major">SPARE PART</h1>
 						<section>
-							<h2>Form</h2>
+							<h2>Order</h2>
 								<form method="post" action="#">
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
 											<!--<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />-->
-											<asp:TextBox ID="TextBox1" runat="server" placeholder="Name"></asp:TextBox>
+											<asp:TextBox ID="TextBox1" runat="server" placeholder="Name" ></asp:TextBox>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<asp:TextBox ID="TextBox2" runat="server" placeholder="Surname"></asp:TextBox>
 										</div>
 										<div class="col-6 col-12-xsmall">
 											<!--<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />-->
-											<asp:TextBox ID="TextBox2" runat="server" placeholder="Email"></asp:TextBox>
+											<asp:TextBox ID="TextBox3" runat="server" placeholder="Email"></asp:TextBox>
 										</div>
+										<div class="col-6 col-12-xsmall">
+											<asp:TextBox ID="TextBox4" runat="server" placeholder="(9__) ___-____"></asp:TextBox>
+										</div>
+										<!-- One Mark Five Model -->										
 										<div class="col-12">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
+											<select name="Models" id="Model">
+												<option value="">- Model -</option>
+												<option value="1">A1</option>
+												<option value="1">A2</option>
+												<option value="1">A3</option>
+												<option value="1">A4</option>
 											</select>
 										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+
+										<div class="col-12">
+											<select name="Parts" id="Part">
+												<option value="">- Part -</option>
+												<option value="1">Engine</option>
+												<option value="2">Transmission</option>
+												<option value="3">Gearbox</option>
+												<option value="4">Brake</option>
+												<option value="5">Suspension</option>
+											</select>
+										</div>
+										<div class="col-12">
+											---SEÇİLEN PART'A GÖRE FİYAT VERİLECEK.---
+										</div>
+										<%--<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-low" name="demo-priority" checked="checked">
 											<label for="demo-priority-low">Low</label>
 										</div>
 										<div class="col-4 col-12-small">
@@ -77,18 +98,19 @@
 										</div>
 										<div class="col-12">
 											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
+										</div>--%>
+										
 										<div class="col-12">
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
+												<li><input type="submit" value="SEND" class="primary" /></li>
+												<%--<li><input type="reset" value="Reset" /></li>--%>
 											</ul>
 										</div>
 									</div>
 								</form>
 							</section>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-						<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+						<%--<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
+						<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>--%>
 					</div>
 				</section>
 

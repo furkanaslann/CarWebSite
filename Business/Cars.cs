@@ -1,11 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Business
 {
-    public class Cars
+    class Cars
     {
-        string CarMark;
-        string CarModel;
-        string CarInfo;
     }
 }

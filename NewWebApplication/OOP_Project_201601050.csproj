@@ -176,7 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Business\Business.csproj">
-      <Project>{3a46c714-e7d3-41fa-9247-82b7678876e3}</Project>
+      <Project>{fe43da64-3ce8-44ce-9453-4ed7f6dbc031}</Project>
       <Name>Business</Name>
     </ProjectReference>
   </ItemGroup>

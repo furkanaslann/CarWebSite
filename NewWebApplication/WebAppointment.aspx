@@ -32,19 +32,72 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Elements</h1>
+							<h1 class="major">CAR APPOINTMENT</h1>
 
 							<!-- Text -->
 								<section>
-									<h2>Text</h2>
-									<p>Attention!!! This is a sample project site, it has nothing to do with the original CARMAX. If you want to reach the real site, click here.</p>
+									<h2>Attention!!!</h2>
+									<p>This is a sample project site, it has nothing to do with the original CARMAX. If you want to reach the real site, <a href="https://www.carmax.com/">click here.</a> </p>
 									<!--<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
 									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
 									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
 									<hr />
 									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>-->
 									<hr />
-									<h2>Heading Level 2</h2>
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall">
+											<!--<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />-->
+											<asp:TextBox ID="TextBox1" runat="server" placeholder="Name" ></asp:TextBox>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<asp:TextBox ID="TextBox2" runat="server" placeholder="Surname"></asp:TextBox>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<!--<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />-->
+											<asp:TextBox ID="TextBox3" runat="server" placeholder="Email"></asp:TextBox>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<asp:TextBox ID="TextBox4" runat="server" placeholder="(9__) ___-____"></asp:TextBox>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<asp:TextBox ID="TextBox5" runat="server" placeholder="Mark"></asp:TextBox>
+										</div>
+										<div class="col-12">
+											<select name="Models" id="Model">
+												<option value="">- Model -</option>
+												<option value="1">A1</option>
+												<option value="1">A2</option>
+												<option value="1">A3</option>
+												<option value="1">A4</option>
+											</select>
+										</div>
+									</div>
+								</section>
+								<br />
+								<div class="col-12">
+										<select name="Maintenances" id="Maintenance">
+											<option value="">- Maintenance -</option>
+											<option value="1">Engine Full Maintenance</option>
+											<option value="2">Undercarriage Maintenance</option>
+											<option value="3">Bodywork Maintenance</option>
+											<option value="4">Tires Maintenance</option>
+											<option value="5">Brake Maintenance</option>
+										</select>
+								</div>
+								
+							<%--<div class="col-12">
+										<select name="Choose-Maintenance" id="Maintenance">
+											<asp:ListBox ID="MyListed" runat="server" placeholder="Maintenance">
+												<asp:ListItem Value="0">Engine Full Maintenance</asp:ListItem>
+												<asp:ListItem Value="1">Undercarriage Maintenance</asp:ListItem>
+												<asp:ListItem Value="2">Bodywork Maintenance</asp:ListItem>
+												<asp:ListItem Value="3">Tires Maintenance</asp:ListItem>
+												<asp:ListItem Value="4">Brake Maintenance</asp:ListItem>
+											</asp:ListBox>
+										</select>
+									</div>--%>
+									
+									<%--<h2>Heading Level 2</h2>
 									<h3>Heading Level 3</h3>
 									<h4>Heading Level 4</h4>
 									<hr />
@@ -130,13 +183,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											</ul>
 										</div>
 									</div>
-								</section>
+								</section>--%>
 
 								<!-- Table -->
 								<section>
-									<h2>Table</h2>
-									<h3>Default</h3>
-									<div class="table-wrapper">
+									<!--<h2>Table</h2>-->
+									<br />
+									<h3>Price</h3>
+									<div class="table-wrapper" style="text-align:center">
 										<table>
 											<thead>
 												<tr>
@@ -147,41 +201,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											</thead>
 											<tbody>
 												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>Engine Full Maintenance</td>
+													<td>It is the maintenance of all parts of the vehicle in the engine.</td>
+													<td>5.349 $ - 19.999 $</td>
 												</tr>
 												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
+													<td>Undercarriage Maintenance </td>
+													<td>front and rear suspensions, bushings, tie rods, shaft.</td>
+													<td>3.749 $</td>
 												</tr>
 												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
+													<td>Bodywork Maintenance</td>
+													<td>Price may vary depending on item size and condition.</td>
+													<td>29.99 $ - 4.999 $</td>
 												</tr>
 												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
+													<td>Tires Maintenance</td>
+													<td>The maintenance done to your tires when they are worn out or in need of cosmetics.</td>
+													<td>149.99 $</td>
 												</tr>
 												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>Brake Maintenance</td>
+													<td>Let's replace your finished brakes with a new one.</td>
+													<td>49.99 $ - 3.999 $</td>
 												</tr>
 											</tbody>
-											<tfoot>
+											<%--<tfoot>
 												<tr>
 													<td colspan="2"></td>
 													<td>100.00</td>
 												</tr>
-											</tfoot>
+											</tfoot>--%>
 										</table>
 									</div>
+									
 
-									<h3>Alternate</h3>
+									<!--<h3>Alternate</h3>
 									<div class="table-wrapper">
 										<table class="alt">
 											<thead>
@@ -225,11 +280,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 												</tr>
 											</tfoot>
 										</table>
-									</div>
+									</div>-->
 								</section>
 
 								<!-- Buttons -->
-								<section>
+								<%--<section>
 									<h3>Buttons</h3>
 									<ul class="actions">
 										<li><a href="#" class="button primary">Primary</a></li>
@@ -312,10 +367,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 											</div>
 										</div>
 									</form>
-								</section>
+								</section>--%>
 
 								<!-- Image -->
-								<section>
+								<%--<section>
 									<h2>Image</h2>
 									<h3>Fit</h3>
 									<div class="box alt">
@@ -340,7 +395,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</div>
 					</section>
 
-			</div>
+			</div>--%>
 
 			<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
